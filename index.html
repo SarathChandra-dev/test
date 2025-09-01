@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>MH</title>
+    </head>
+    <body>
+        <h1 id="abc">
+            Welcome
+        </h1>
+        <p style="color:aquamarine"> Test page for HTML </p>
+
+        <button onclick="xyz()">Click Here</button>
+        <a href = "about.html">Click here to know more</a>
+        <script>
+            console.log("Hello Console.log is working fine")
+            function xyz(){
+                //alert("Button Clicked")
+                //document.write("Button Clicked");
+                const p=prompt("Enter your name:")
+                //alert("Welcome"+p);
+                document.querySelector("h1").innerText ="Welcome " + p;
+                //document.querySelector("h1").style.color = "green";
+                document.getElementById("abc").style.color = "red";
+            }
+
+        </script>
+    </body>
+</html>
